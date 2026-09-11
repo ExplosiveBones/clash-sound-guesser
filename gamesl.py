@@ -408,7 +408,7 @@ def next_sound_callback():
     st.session_state.feedback = ""
     st.session_state.user_guess = ""
 
-st.title("Clash Royale Sound Guessing game")
+st.title("Clash Royale Sound Guessing Game")
 
 current_card = st.session_state.current_card
 sound_path = os.path.join(BASE_DIR, st.session_state.sound_file)
@@ -439,7 +439,7 @@ with st.form(key="guess_form"):
         else:
             st.session_state.feedback = "incorrect"
 
-st.button("Next Sound ➡️", on_click=next_sound_callback)
+st.button("Next Sound", on_click=next_sound_callback)
 
 if st.session_state.feedback == "correct":
     st.success("Correct!")
