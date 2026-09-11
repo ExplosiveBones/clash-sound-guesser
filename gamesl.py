@@ -408,7 +408,7 @@ def next_sound_callback():
     st.session_state.feedback = ""
     st.session_state.user_guess = ""
 
-st.title("Clash Royale Sound Guessing Game")
+st.title("Clash Royale sound guessing game")
 
 current_card = st.session_state.current_card
 sound_path = os.path.join(BASE_DIR, st.session_state.sound_file)
