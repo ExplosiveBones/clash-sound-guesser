@@ -385,6 +385,72 @@ sound_library = {
         ],
         "accepted_guesses": ["giant skeleton", "giant skelly", "gs"],
     },
+    "Giant Snowball": {
+        "filenames": [
+            "Cards_Giant Snowball_evo_snowball_deploy_01.ogg",
+            "Cards_Giant Snowball_evo_snowball_land_01.ogg",
+            "Cards_Giant Snowball_snowball_impact_01.ogg"
+        ],
+        "accepted_guesses": ["giant snowball", "snowball", "evo snow", "evo giant snowball", "evo snowball", "snow"],
+    },
+    "Giant": {
+        "filenames": [
+            "Cards_Giant_giant_deploy_01.ogg",
+            "Cards_Giant_giant_attack_swing_01.ogg",
+            "Cards_Giant_card_hero_giant_skill.ogg",
+            "Cards_Giant_card_hero_giant_deploy_vo.ogg",
+            "Cards_Giant_card_hero_giant_deploy_jingle_stereo.ogg",
+            "Cards_Giant_card_hero_giant_atk_vo_b.ogg",
+            "Cards_Giant_card_hero_giant_atk_hit_a.ogg"
+        ],
+        "accepted_guesses": ["giant", "hero giant"],
+    },
+    "Goblin Barrel": {
+        "filenames": [
+            "Cards_Goblin Barrel_barrel_drawback_14.ogg",
+            "Cards_Goblin Barrel_barrel_explosion_02.ogg",
+            "Cards_Goblin Barrel_evo_gob_barrel_dep_01.ogg"
+        ],
+        "accepted_guesses": ["goblin barrel", "gb", "barrel", "evo goblin barrel"],
+    },
+    "Goblin Cage": {
+        "filenames": [
+            "Cards_Goblin Brawler_cage_gob_dep_01.ogg",
+            "Cards_Goblin Brawler_cage_gob_hit_01.ogg",
+            "Cards_Goblin Brawler_prison_cage_gob_drop_02.ogg",
+            "Cards_Goblin Cage_evo_gob_cage_break_01.ogg",
+            "Cards_Goblin Cage_evo_gob_cage_dep_01.ogg",
+            "Cards_Goblin Cage_goblin_cage_fight_loop_01.ogg"
+        ],
+        "accepted_guesses": ["goblin cage", "cage", "evo goblin cage", "evo cage", "diddy cage", "evo diddy cage"],
+    },
+    "Goblin Curse": {
+        "filenames": [
+            "Cards_Goblin Curse_gob_spell_transformation_01.ogg",
+            "Cards_Goblin Curse_goblin_curse_spell_02.ogg"
+        ],
+        "accepted_guesses": ["goblin curse", "curse"],
+    },
+    "Goblin Demolisher": {
+        "filenames": [
+            "Cards_Goblin Demolisher_gob_demo_atk_01.ogg",
+            "Cards_Goblin Demolisher_gob_demo_charge_01.ogg",
+            "Cards_Goblin Demolisher_gob_demo_dep_vo_01.ogg",
+            "Cards_Goblin Demolisher_gob_demo_explo_01.ogg"
+        ],
+        "accepted_guesses": ["goblin demolisher", "demolisher"],
+    },
+    "Goblin Drill": {
+        "filenames": [
+            "Cards_Goblin Drill_gob_drill_up_02.ogg",
+            "Cards_Goblin Drill_evo_gob_drill_deploy_01.ogg",
+            "Cards_Goblin Drill_evo_gob_drill_up_01.ogg",
+            "Cards_Goblin Drill_evo_goib_drill_dis_01.ogg",
+            "Cards_Goblin Drill_gob_drill_down_01.ogg",
+            "Cards_Goblin Drill_gob_drill_loop_01.ogg"
+        ],
+        "accepted_guesses": ["goblin drill", "drill", "evo goblin drill", "evo drill"],
+    },
 }
 
 
@@ -408,12 +474,12 @@ def next_sound_callback():
     st.session_state.feedback = ""
     st.session_state.user_guess = ""
 
-st.title("Clash Royale sound guessing game")
+st.title("Clash Royale Sound Guessing game")
 
 current_card = st.session_state.current_card
 sound_path = os.path.join(BASE_DIR, st.session_state.sound_file)
 
-st.write("Made by ExplosiveBones")
+st.write("Made by ExplosiveBones &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (v.7.8)")
 st.write("")
 st.write("Listen to the sound effect below:")
 if os.path.exists(sound_path):
@@ -445,3 +511,22 @@ if st.session_state.feedback == "correct":
     st.success("Correct!")
 elif st.session_state.feedback == "incorrect":
     st.error(f"Incorrect! The answer was **{current_card}**.")
+
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("Made and coded by ExplosiveBones, sound effects belong to Supercell, sound effects that come from multiple cards have been omitted as well as sounds that are near impossible to determine the source of, the first number of the version in the top right corner correlates to the latest letter of the alphabet that a card's name may start with, and the second number is the amount of cards that have been added starting with that letter (ex. v7.5 meand 5 cards that start with the letter 'g' have been added as well as everything before that).")
